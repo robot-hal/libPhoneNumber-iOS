@@ -13,19 +13,19 @@
 
 @interface NBMetadataHelper : NSObject
 
-+ (BOOL)hasValue:(NSString *)string;
++ (BOOL)hasValue:(NSString * _Null_unspecified)string;
 
-- (instancetype)initWithZippedData:(NSData *)data expandedLength:(NSUInteger)expandedLength;
+- (instancetype _Null_unspecified)initWithZippedData:(NSData * _Null_unspecified)data expandedLength:(NSUInteger)expandedLength;
 
-- (instancetype)init;
+- (instancetype _Nonnull)init;
 
-- (NSArray *)regionCodeFromCountryCode:(NSNumber *)countryCodeNumber;
-- (NSString *)countryCodeFromRegionCode:(NSString *)regionCode;
+- (NSArray * _Null_unspecified)regionCodeFromCountryCode:(NSNumber * _Null_unspecified)countryCodeNumber;
+- (NSString * _Null_unspecified)countryCodeFromRegionCode:(NSString * _Null_unspecified)regionCode;
 
-- (NBPhoneMetaData *)getMetadataForNonGeographicalRegion:(NSNumber *)countryCallingCode;
-- (NBPhoneMetaData *)getMetadataForRegion:(NSString *)regionCode;
+- (NBPhoneMetaData * _Null_unspecified)getMetadataForNonGeographicalRegion:(NSNumber * _Null_unspecified)countryCallingCode;
+- (NBPhoneMetaData * _Null_unspecified)getMetadataForRegion:(NSString * _Null_unspecified)regionCode;
 
-- (NSDictionary *)countryCodeToCountryNumberDictionary;
-- (NSArray *)getAllMetadata;
+- (NSDictionary * _Null_unspecified)countryCodeToCountryNumberDictionary;
+- (NSArray * _Null_unspecified)getAllMetadata;
 
 @end
